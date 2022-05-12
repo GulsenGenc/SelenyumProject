@@ -25,7 +25,7 @@ e. Sonra karşınıza çıkan ilk sonucun resmine tıklayın.
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         //a.google web sayfasına gidin. https://www. amazon.com/
-        driver.get("https://www. amazon.com/");
+        driver.get("https://www.amazon.com/");
         //b. Search(ara) “city bike”
         WebElement aramaKutusu=driver.findElement(By.id("twotabsearchtextbox"));
         aramaKutusu.sendKeys("city bike");

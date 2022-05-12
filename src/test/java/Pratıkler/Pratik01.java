@@ -72,6 +72,13 @@ public class Pratik01 {
         //   3. Sayfada kac tane link oldugunu bulun.
         List<WebElement> linklerinListesi=driver.findElements(By.tagName("a"));
         System.out.println("sayfadakı lınk sayısı->"+linklerinListesi.size());
+
+        //linkleri yazdıralım(linkler lıstesının her bır elemanı bır webelemant old.için dırek yazamayız.referans yazar.
+        //for each loop ıle yazdırırız.
+        for (WebElement w:linklerinListesi
+             ) {
+            System.out.print(w.getText()+" ");
+        }
         driver.close();
     }
 }
